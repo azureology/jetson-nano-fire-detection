@@ -1,6 +1,9 @@
 # Fire detection on Jetson Nano using NanoDet
-This is a real-time inference implementation of fire detection on Nvidia Jetson Nano (2GB) developer kit using NannoDet.
 ![pic](result.png)
+
+This is a real-time inference implementation of fire detection on Nvidia Jetson Nano (2GB) developer kit using NannoDet.
+
+[中文博客](https://www.cnblogs.com/azureology/p/14103685.html) ｜ [视频演示](https://www.bilibili.com/video/BV1np4y1z7kF/)
 ## Dependices
 Notice: The JetPack 4.4 production release [L4T R32.4.3] only supports PyTorch 1.6.0 or newer, due to updates in cuDNN.
 ```
@@ -65,7 +68,7 @@ Due to limited resources on Jetson Nano, it's recommended to train model on PC w
 ```
 python3 train.py [your_own_config.yml]
 ```
-With the end of last epoch, you will get weight file in save_dir named `model_last.pth` by default. In my case, it takes about 2.5 hr to train 400 images on RTX2080 with batch_size = 80 and total_epochs = 160.
+With the end of last epoch, you will get weight file in save_dir named `model_last.pth` by default. In my case, it takes about 2.5 hr to train 400 images on RTX2080 with `batch_size = 80` and `total_epochs = 160`.
 ## Thanks
 https://github.com/RangiLyu/nanodet  
 https://courses.nvidia.com/courses/course-v1:DLI+S-RX-02+V2/about
